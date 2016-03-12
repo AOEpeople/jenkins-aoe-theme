@@ -53,6 +53,24 @@ a:visited {
     display: none;
 }
 
+
+/* 
+---------------------------------------------------------------
+    Search Field
+---------------------------------------------------------------
+*/
+
+#header .searchbox {
+    padding-top: 9px;
+}
+
+#search-box {
+    border-radius: 12px;
+    background-image: none;
+    padding-left: 12px;
+}
+
+
 /* 
 ---------------------------------------------------------------
     Breadcrumb
