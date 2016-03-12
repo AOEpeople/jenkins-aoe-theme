@@ -139,6 +139,8 @@ body #breadcrumbs li a.mouseIsOverMenuSelector {
 
 }
 
+/* Green */
+#projectstatus tr td[data="4"]:before,
 #projectstatus tr.job-status-blue td:first-child:before,
 #projectstatus tr.job-status-blue-anime td:first-child:before {
     background: #397439;
@@ -147,6 +149,8 @@ body #breadcrumbs li a.mouseIsOverMenuSelector {
     background-image: radial-gradient(circle at 3px 3px, #72d472 0%, #397439 100%);
 }
 
+/* Red */
+#projectstatus tr td[data="0"]:before,
 #projectstatus tr.job-status-red td:first-child:before,
 #projectstatus tr.job-status-red-anime td:first-child:before {
     background: #ac2925;
@@ -155,6 +159,8 @@ body #breadcrumbs li a.mouseIsOverMenuSelector {
     background-image: radial-gradient(circle at 3px 3px, #d9534f 0%, #ac2925 100%);
 }
 
+/* Yellow */
+#projectstatus tr td[data="2"]:before,
 #projectstatus tr.job-status-yellow td:first-child:before,
 #projectstatus tr.job-status-yellow-anime td:first-child:before {
     background: #f0ad4e;
@@ -163,6 +169,7 @@ body #breadcrumbs li a.mouseIsOverMenuSelector {
     background-image: radial-gradient(circle at 3px 3px, #f0ad4e 0%, #d58512 100%);
 }
 
+/* Gray */
 #projectstatus tr.job-status-disabled td:first-child:before,
 #projectstatus tr.job-status-aborted td:first-child:before,
 #projectstatus tr.job-status-nobuilt td:first-child:before,
