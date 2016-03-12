@@ -1,13 +1,13 @@
 /* 
 ===============================================================
     Jenkins Theme for AOE GmbH
-    Built for Jenkins Version 1.652
+    Built for Jenkins Version 1.615
 ===============================================================
 */
 
 body {
     font-family: Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    font-size: 14px !important;
+    font-size: 13px !important;
     line-height: 20px !important;
 }
 
@@ -165,10 +165,10 @@ body #breadcrumbs li a.mouseIsOverMenuSelector {
 
 #projectstatus tr.job-status-disabled td:first-child:before,
 #projectstatus tr.job-status-aborted td:first-child:before,
-#projectstatus tr.job-status-notbuilt td:first-child:before,
+#projectstatus tr.job-status-nobuilt td:first-child:before,
 #projectstatus tr.job-status-disabled-anime td:first-child:before,
 #projectstatus tr.job-status-aborted-anime td:first-child:before,
-#projectstatus tr.job-status-notbuilt-anime td:first-child:before {
+#projectstatus tr.job-status-nobuilt-anime td:first-child:before {
     background: #999;
     background-image: -moz-radial-gradient(3px 3px 45deg, circle cover, #ccc 0%, #999 100%);
     background-image: -webkit-radial-gradient(3px 3px, circle cover, #ccc, #999);
@@ -247,6 +247,7 @@ td.progress-bar-done {
 ---------------------------------------------------------------
 */
 
-footer {
+footer,
+#footer-container {
     background-color: #EFF3F6;
 }
