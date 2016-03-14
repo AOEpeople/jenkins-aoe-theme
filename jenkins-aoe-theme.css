@@ -121,7 +121,6 @@ body #breadcrumbs li a.mouseIsOverMenuSelector {
 ---------------------------------------------------------------
 */
 
-#projectstatus tr td:first-child img,
 #projectstatus tr[class*="job-status"] td:first-child img {
     display: none;
 }
@@ -130,7 +129,6 @@ body #breadcrumbs li a.mouseIsOverMenuSelector {
     width: 40px;
 }
 
-#projectstatus tr td:first-child:before,
 #projectstatus tr[class*="job-status"] td:first-child:before {
     content: '';
     width: 26px;
