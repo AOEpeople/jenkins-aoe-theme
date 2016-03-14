@@ -1,5 +1,7 @@
 # AOE Theme for Jenkins CI
 
+Tested Jenkins Versions: 1.615, 1.652
+
 ## Usage
 
 1. Install the [Simple Theme Plugin for Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin)
