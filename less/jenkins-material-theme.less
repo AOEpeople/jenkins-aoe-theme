@@ -1,11 +1,13 @@
-//@import 'variables';
 @import '../node_modules/jenkins-core-theme/less/functions';
 @import '../node_modules/jenkins-core-theme/less/images';
 @import '../node_modules/jenkins-core-theme/less/codemirror';
+@import 'variables';
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500,300);
 
-* {
+:not(div.ace_editor) {
   font-family: 'Roboto', sans-serif !important;
+  outline: none;
 }
 
 body, table, form, td, th, p {
@@ -32,13 +34,14 @@ a, a:hover, a:visited, a:link {
 }
 
 .task-icon-link[href='/'] {
-  position: fixed;
-  top: 12px;
-  left: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: @color-link;
-  height: 40px;
-  width: 170px;
+  height: 64px;
+  width: 250px;
   z-index: 3000;
+  padding: 12px;
 
   &:hover {
     opacity: 1 !important;
@@ -50,7 +53,6 @@ a, a:hover, a:visited, a:link {
   height: 64px;
   background-color: @color-primary;
   text-transform: uppercase;
-  position: fixed;
   right: 0;
   left: 0;
   top: 0;
@@ -74,12 +76,9 @@ a, a:hover, a:visited, a:link {
 }
 
 #breadcrumbBar {
-  margin-top: 65px;
-
   #breadcrumbs {
     border: none !important;
   }
-
 }
 
 #breadcrumb-menu[style*='top: -27px;'] {
@@ -141,6 +140,24 @@ th.pane {
   color: #666
 }
 
+#projectstatus tr:hover {
+  background-color: #f0f0f0 !important;
+
+  td {
+    background-color: #f0f0f0 !important;
+  }
+}
+
+#projectstatus .healthReportDetails table tbody tr td {
+  background-color: @color-white !important;
+  color: @color-text !important;
+}
+
+#projectstatus .healthReportDetails table tbody tr:hover td {
+  background-color: @color-white !important;
+  color: @color-text !important;
+}
+
 a#jenkins-home-link {
   opacity: 1 !important;
 }
@@ -173,6 +190,10 @@ table.progress-bar {
 
 #main-panel-content > div:nth-child(2) {
   background-color: transparent !important
+}
+
+#main-panel > pre {
+  font-family: 'Roboto Mono', monospace !important;
 }
 
 .yui-button {
@@ -212,7 +233,7 @@ table.progress-bar {
 
 .console-output, .console-output * {
   position: relative;
-  font-family: monospace !important;
+  font-family: 'Roboto Mono', monospace !important;
   font-size: 14px;
   background: @console-black;
   color: @console-white;
@@ -221,6 +242,10 @@ table.progress-bar {
 
 .console-output {
   padding: 10px 20px;
+}
+
+.ace_editor {
+  font: 12px/normal 'Roboto Mono', monospace;
 }
 
 [style^="color:gray"] {
@@ -249,4 +274,43 @@ pre {
 .left-bar {
   top: 27px !important;
   left: 16px !important;
+}
+
+.yuimenuitem-selected {
+  background-color: @color-primary !important;
+  & > a {
+    color: @color-white !important;
+
+    & > img {
+      filter: brightness(10000);
+    }
+  }
+}
+
+.build-row-cell .pane {
+  .build-controls {
+    width: 25%!important;
+  }
+  .build-details {
+    width: 45%!important;
+  }
+  .build-name .display-name {
+    margin-left: 35%!important;
+  }
+}
+
+.comboBoxList {
+  color: @color-black;
+}
+
+.build-row-cell .pane {
+  .build-controls {
+    width: 25%!important;
+  }
+  .build-details {
+    width: 45%!important;
+  }
+  .build-name .display-name {
+    margin-left: 35%!important;
+  }
 }
