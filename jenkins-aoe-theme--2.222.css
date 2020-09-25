@@ -1,19 +1,32 @@
 /*
 ===============================================================
     Jenkins Theme for AOE GmbH
-    Built for Jenkins Version 2.222
+    Built for Jenkins Version >= 2.222
 ===============================================================
 */
+
+:root {
+    /* AOE brand colors */
+    --aoe-color--dark-grey: #475157;
+    --aoe-color--grey: #7A8991;
+    --aoe-color--light-grey: #CAD5DA;
+    --aoe-color--orange: #F7941D;
+
+    /* Jenkins theme colors */
+    --primary: var(--aoe-color--dark-grey);
+    --primary-hover: var(--aoe-color--grey);
+    --header-bg-classic: var(--aoe-color--dark-grey);
+    --link-color: var(--aoe-color--grey);
+    --link-visited-color: var(--aoe-color--grey);
+    --bigtable-header-bg: var(--aoe-color--grey);
+    --bigtable-row-border-color: var(--aoe-color--light-grey);
+    --tab-link-checked-bg: var(--aoe-color--grey);
+}
 
 body {
     font-family: Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-size: 13px !important;
     line-height: 20px !important;
-}
-
-a:link,
-a:visited {
-    color: #7B8B93;
 }
 
 /*
@@ -24,7 +37,6 @@ a:visited {
 
 #header {
     min-height: 42px;
-    background-color: #475157;
 }
 
 #header .logo {
@@ -121,11 +133,6 @@ body #breadcrumbs li a.mouseIsOverMenuSelector {
     Panes, Sidebar
 ---------------------------------------------------------------
 */
-
-.pane-frame {
-    border: 1px solid #e3e7e9;
-    border-color: #e3e7e9 #b7c3cb #b7c3cb #e3e7e9;
-}
 
 #buildHistoryPage .build-search-row input {
     border: 1px solid #e3e7e9;
@@ -242,26 +249,6 @@ table.progress-bar {
 
 td.progress-bar-done {
     background-color: #606b71;
-}
-
-/*
----------------------------------------------------------------
-    Tables
----------------------------------------------------------------
-*/
-
-.bigtable th {
-    background-color: #EFF3F6;
-}
-
-/*
----------------------------------------------------------------
-    Tabs
----------------------------------------------------------------
-*/
-
-.tabBar [type=radio]:checked ~ a {
-    background-color: #EFF3F6;
 }
 
 /*
