@@ -151,6 +151,15 @@ body #breadcrumbs li a.mouseIsOverMenuSelector {
     border: none;
 }
 
+/*
+---------------------------------------------------------------
+    Status Icons
+---------------------------------------------------------------
+*/
+
+#projectstatus tr[class*="job-status"] td:first-child {
+    width: 40px;
+}
 
 /*
 ---------------------------------------------------------------
