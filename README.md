@@ -10,5 +10,6 @@
 
 | Jenkins version | Stylesheet URL                                                                                  |
 |-----------------|--------------------------------------------------------------------------------------|
+| &gt;= 2.283     | https://cdn.jsdelivr.net/gh/AOEpeople/jenkins-aoe-theme/jenkins-aoe-theme--2.283.css |
 | &gt;= 2.222     | https://cdn.jsdelivr.net/gh/AOEpeople/jenkins-aoe-theme/jenkins-aoe-theme--2.222.css |
 | 1.x, 2.x        | https://cdn.jsdelivr.net/gh/AOEpeople/jenkins-aoe-theme/jenkins-aoe-theme.css        |
